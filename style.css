@@ -53,7 +53,7 @@ body{
 }
 
 .contact-content{
-	width: 480px;
+	width: 590px;
 	margin-left: 50%;
 	padding-left: 110px; 
 	padding-top: 60px;
@@ -63,7 +63,7 @@ body{
 	color: #ad7835;
 	font-weight: 400;
 	position: relative;
-	font-family: 'Droid Serif';
+	font-family: 'Droid Serif', serif;
 	margin-top: 0;
 	margin-bottom: 10px;
 	font-size: 60px;
@@ -105,10 +105,8 @@ body{
 
 .btn{
  	display: inline-block;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #ad7835;
-	background-color: #373737;
+	border: 1px solid #ad7835;
+	background-color: transparent;
 
 	font-size: 16px;
 	line-height: 28px;
@@ -122,9 +120,11 @@ body{
 	text-decoration: none; 
 }
 
+.social-btn:hover,
 .btn:hover,
 .btn:active{
 	background-color: #494949;
+	cursor: pointer;
 }
 
 .aboutme .btn{
@@ -171,6 +171,11 @@ body{
 	text-decoration: none; 
 }
 
+.link:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .article-view{
 	float: left;
 	width: 370px;
@@ -193,15 +198,74 @@ body{
 	clear: both;
 }
 
+.contact-form input,
+.contact-form textarea{
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	width: 215px;
+	height: 60px;
+	box-sizing: inherit;
+}
+.contact-form input:nth-child(1){
+	margin-right: 40px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+	color: #fff;
+}
+
+.contact-form textarea{
+	margin-top: 40px;
+	width: 470px;
+	min-height: 100px;
+}
+
 .gallery{
 	margin-top: 230px;
 }
 
 .main-footer{
-	margin-top: 90px;
+	margin-top: 242px;
 	padding-bottom: 170px;
 }
 
+.footer-social{
+	text-align: center;
+}
+
+.social-btn{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #ad7835;
+	background: transparent url("image/sprite.png") no-repeat;
+	margin-right: 29px;
+}
 
 
+.social-btn:last-child{
+	margin: 0;
+}
 
+.social-btn-fb{
+    background-position: 10px 0px;
+}
+.social-btn-insta{
+	background-position: 3px -80px;
+}
+
+.social-btn-pintrest{
+	background-position: 5px -155px;
+}
+
+.social-btn-tw{
+	background-position: 5px -225px;
+}
+
+.footer-social span{
+	display: none;
+}
