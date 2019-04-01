@@ -1,5 +1,7 @@
 *{
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html, 
@@ -21,6 +23,7 @@ body{
 .container{
 	width: 1330px;
 	margin: 0 auto;
+
 }
 
 .article-foto{
@@ -105,7 +108,7 @@ body{
 
 .btn{
  	display: inline-block;
-	border: 1px solid #ad7835;
+ 	border: 1px solid #ad7835;
 	background-color: transparent;
 
 	font-size: 16px;
@@ -115,9 +118,11 @@ body{
 	text-align: center;
 	color: #ad7835;
 	padding: 15px 45px;
+	
 
 	text-transform: uppercase;
 	text-decoration: none; 
+	box-sizing: inherit;
 }
 
 .social-btn:hover,
@@ -226,7 +231,49 @@ body{
 
 .gallery{
 	margin-top: 230px;
+	box-sizing: inherit;
 }
+
+.gallery-btn {
+	text-align: center;	
+	
+}
+ .gallery .btn{
+ 	margin-top: 90px;
+ }
+
+.gallery .content-title{
+	margin-left: 70px; 
+	text-align: left;
+}
+
+.gallery img{
+	display: inline-block;
+	margin: 15px;
+}
+
+.gallery .vertical-block{
+	float: left;
+	width: 445px;
+	margin-top: 70px;
+
+	
+}
+
+.vertical-block img{
+	float: right;
+	
+}
+
+.horizontal-block{
+	float: left;
+}
+
+.horizontal-block:last-child img{
+	float: left;
+}
+
+
 
 .main-footer{
 	margin-top: 242px;
